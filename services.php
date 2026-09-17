@@ -7,12 +7,12 @@ $ourservices = $query->select('ourServices');
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services</title>
+  <title>خدماتنا | MOON</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link href="favicon.ico" rel="icon">
@@ -39,11 +39,11 @@ $ourservices = $query->select('ourServices');
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="./">Home</a></li>
-            <li class="current">Services</li>
+            <li><a href="./">الرئيسية</a></li>
+            <li class="current">خدماتنا</li>
           </ol>
         </nav>
-        <h1>Services</h1>
+        <h1>خدماتنا</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -61,7 +61,7 @@ $ourservices = $query->select('ourServices');
         <div class="row">
 
           <div class="col-lg-6 d-flex align-items-center">
-            <img src="assets/img/<?php echo $bioservices[0]['image'] ?>" class="img-fluid" alt="Our Products">
+            <img src="assets/img/<?php echo $bioservices[0]['image'] ?>" class="img-fluid" alt="خدماتنا">
           </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -89,6 +89,20 @@ $ourservices = $query->select('ourServices');
 
       </div>
 
+    </section>
+
+    <section id="advertising" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>الدعاية والإعلان</h2>
+        <p>نساعدك على بناء حضور مؤثر والوصول إلى جمهورك من خلال حلول إعلانية متكاملة ومبتكرة.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-4"><h3>الهوية البصرية</h3><p>نصمم شعارات وهوية بصرية متناسقة تعبر عن شخصية علامتك التجارية.</p></div>
+          <div class="col-lg-4"><h3>التسويق الرقمي</h3><p>نخطط لحملات رقمية موجهة تساعدك على زيادة الوصول والتفاعل وتحقيق نتائج واضحة.</p></div>
+          <div class="col-lg-4"><h3>إدارة المحتوى</h3><p>ننتج محتوى إبداعيًا مناسبًا لمنصات التواصل الاجتماعي ويقربك من عملائك.</p></div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->

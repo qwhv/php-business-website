@@ -17,14 +17,14 @@ foreach ($products as $product) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Products</title>
-  <meta name="description" content="Product listings and details">
-  <meta name="keywords" content="products, online store, shopping">
+  <title>أعمالنا | MOON</title>
+  <meta name="description" content="أعمال وخدمات شركة MOON للتقنية والدعاية والإعلان">
+  <meta name="keywords" content="تقنية, دعاية, إعلان, تصميم, برمجة">
   <link href="favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -49,11 +49,11 @@ foreach ($products as $product) {
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="./">Home</a></li>
-            <li class="current">Products</li>
+            <li><a href="./">الرئيسية</a></li>
+            <li class="current">أعمالنا</li>
           </ol>
         </nav>
-        <h1>Products</h1>
+        <h1>أعمالنا</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -64,7 +64,7 @@ foreach ($products as $product) {
 
           <!-- Products Category -->
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter="*" class="filter-active">الكل</li>
             <?php foreach ($categories as $category): ?>
               <li data-filter=".filter-category-<?= $category['id'] ?>"><?= $category['category_name'] ?></li>
             <?php endforeach; ?>

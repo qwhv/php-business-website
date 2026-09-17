@@ -25,12 +25,12 @@ foreach ($serviceItems as $item) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About Us</title>
+  <title>من نحن | MOON</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link href="favicon.ico" rel="icon">
@@ -57,11 +57,11 @@ foreach ($serviceItems as $item) {
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="./">Home</a></li>
-            <li class="current">About Us</li>
+            <li><a href="./">الرئيسية</a></li>
+            <li class="current">من نحن</li>
           </ol>
         </nav>
-        <h1>About Us</h1>
+        <h1>من نحن</h1>
       </div>
     </div><!-- Page Title Ends -->
 

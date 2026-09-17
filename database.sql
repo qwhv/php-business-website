@@ -126,8 +126,8 @@ INSERT INTO
     users (name, username, password)
 VALUES
     (
-        'Iqbolshoh',
-        'Iqbolshoh',
+        'MOON',
+        'moon',
         '52be5ff91284c65bac56f280df55f797a5c505f7ef66317ff358e34791507027'
     );
 
@@ -135,9 +135,9 @@ INSERT INTO
     about (title, p1, p2, image)
 VALUES
     (
-        'Our Services',
-        'Our team always strives to achieve the best results. We continue to improve our skills and provide the most effective solutions for our clients.',
-        'Building long-term and trustworthy partnerships with our clients is our main goal.',
+        'خدماتنا',
+        'نسعى في شركة MOON دائمًا إلى تحقيق أفضل النتائج، ونطوّر مهاراتنا باستمرار لنقدم لعملائنا حلولًا تقنية وإبداعية فعّالة.',
+        'نبني شراكات طويلة الأمد وموثوقة مع عملائنا، ونحوّل أفكارهم إلى نجاح ملموس.',
         'assets/img/about.jpg'
     );
 
@@ -146,35 +146,35 @@ INSERT INTO
 VALUES
     (
         1,
-        'We provide quality service to our clients and aim to meet their needs.'
+        'نقدم خدمات عالية الجودة ونحرص على تلبية احتياجات عملائنا.'
     ),
     (
         1,
-        'We develop innovative solutions and apply modern technologies.'
+        'نطوّر حلولًا مبتكرة ونستخدم أحدث التقنيات.'
     ),
     (
         1,
-        'We approach each project individually and offer new solutions.'
+        'نتعامل مع كل مشروع بشكل مستقل ونقدم حلولًا مخصصة.'
     ),
     (
         1,
-        'Our experienced professionals assist with any issues.'
+        'يساعد فريقنا المتخصص في حل مختلف التحديات.'
     ),
     (
         1,
-        'Our support service is always open for our clients.'
+        'فريق الدعم لدينا متاح دائمًا لخدمة عملائنا.'
     ),
     (
         1,
-        'We improve service quality through innovative approaches.'
+        'نرتقي بجودة خدماتنا من خلال أساليب مبتكرة.'
     ),
     (
         1,
-        'We create special strategies for each project.'
+        'نضع استراتيجيات مميزة تناسب كل مشروع.'
     ),
     (
         1,
-        'We help our clients unlock new opportunities.'
+        'نساعد عملاءنا على اكتشاف فرص جديدة للنمو.'
     );
 
 INSERT INTO
@@ -188,23 +188,23 @@ INSERT INTO
 VALUES
     (
         'hero-carousel-1.jpg',
-        'Welcome to Iqbolshoh',
-        'Modern Web-Sites Creation',
-        'Start',
+        'مرحبًا بكم في MOON',
+        'حلول التقنية والدعاية والإعلان',
+        'اكتشف خدماتنا',
         'about.php'
     ),
     (
         'hero-carousel-2.jpg',
-        'Change Your Life with Us',
-        'Grow yourself with new ideas and creative solutions.',
-        'Start',
+        'طوّر أعمالك مع MOON',
+        'نحوّل الأفكار الجديدة إلى حلول إبداعية تساهم في نمو أعمالك.',
+        'اكتشف خدماتنا',
         'about.php'
     ),
     (
         'hero-carousel-3.jpg',
-        'Our Offers',
-        'We offer the best services for you.',
-        'Start',
+        'حلولنا بين يديك',
+        'نقدم لك أفضل الحلول التقنية والتسويقية بجودة عالية.',
+        'اكتشف خدماتنا',
         'about.php'
     );
 
@@ -212,20 +212,20 @@ INSERT INTO
     bioServices (h2, p1, image, h3, p2)
 VALUES
     (
-        'Our Services',
-        'Our experience and skills help us to deliver the best products to you.',
+        'خدماتنا',
+        'تساعدنا خبرتنا ومهاراتنا على تقديم حلول مميزة تلبي احتياجاتك.',
         'skills.jpg',
-        'Our Product Development Skills',
-        'We use modern technologies to create our products.'
+        'خبراتنا التقنية والإبداعية',
+        'نستخدم التقنيات الحديثة لصناعة حلول ومنتجات مميزة.'
     );
 
 INSERT INTO
     category (category_name)
 VALUES
-    ('App'),
-    ('Product'),
-    ('Branding'),
-    ('Book');
+    ('تطبيقات'),
+    ('حلول تقنية'),
+    ('هوية بصرية'),
+    ('تصميمات');
 
 INSERT INTO
     contact (twitter, facebook, instagram, linkedin)
@@ -240,15 +240,15 @@ VALUES
 INSERT INTO
     contact_box (title, value, icon)
 VALUES
-    ('Address', 'Samarkand City', 'bi bi-geo-alt'),
+    ('العنوان', 'اليمن، إب، الجبانة السفلى', 'bi bi-geo-alt'),
     (
-        'Contact Us',
-        '+998 99 779 93 33',
+        'الهاتف',
+        '+967773143853 - +967771949917',
         'bi bi-telephone'
     ),
     (
-        'Send Us an Email',
-        'iilhomjonov777@gmail.com',
+        'البريد الإلكتروني',
+        'lood71117@gmail.com',
         'bi bi-envelope'
     );
 
@@ -257,102 +257,102 @@ INSERT INTO
 VALUES
     (
         'bi bi-bounding-box-circles',
-        'Innovative Solutions',
-        'Our innovative solutions can change your life.'
+        'حلول مبتكرة',
+        'نقدم حلولًا مبتكرة تساعد على تطوير أعمالك.'
     ),
     (
         'bi bi-calendar4-week',
-        'Free Consultations',
-        'Get free advice from our experts and grow.'
+        'استشارات مجانية',
+        'احصل على استشارة مجانية من خبرائنا وابدأ النمو.'
     ),
     (
         'bi bi-broadcast',
-        'Strong Network',
-        'Gain access to numerous opportunities through our network.'
+        'شبكة قوية',
+        'استفد من فرص عديدة عبر شبكة علاقاتنا وخبراتنا.'
     );
 
 INSERT INTO
     ourServices (service_name, skill_level)
 VALUES
-    ('Web Development', 90),
-    ('Mobile Development', 85),
-    ('Cybersecurity', 80),
-    ('Database', 95),
-    ('UI/UX Design', 75);
+    ('تطوير المواقع', 90),
+    ('تطوير التطبيقات', 85),
+    ('الأمن السيبراني', 80),
+    ('قواعد البيانات', 95),
+    ('تصميم واجهات المستخدم', 75);
 
 INSERT INTO
     products (category_id, product_name, description, price)
 VALUES
     (
         1,
-        'App 1',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'تطبيق 1',
+        'حل تقني مبتكر من MOON',
         '300'
     ),
     (
         2,
-        'Product 1',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'حل تقني 1',
+        'حل رقمي مصمم لتطوير أعمالك',
         '400'
     ),
     (
         3,
-        'Branding 1',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'هوية بصرية 1',
+        'تصميم هوية بصرية تعكس قوة علامتك التجارية',
         '500'
     ),
     (
         4,
-        'Books 1',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'تصميم 1',
+        'تصميم إبداعي بجودة احترافية',
         '600'
     ),
     (
         1,
-        'App 2',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'تطبيق 2',
+        'حل تقني مبتكر من MOON',
         '350'
     ),
     (
         2,
-        'Product 2',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'حل تقني 2',
+        'حل رقمي مصمم لتطوير أعمالك',
         '450'
     ),
     (
         3,
-        'Branding 2',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'هوية بصرية 2',
+        'تصميم هوية بصرية تعكس قوة علامتك التجارية',
         '550'
     ),
     (
         4,
-        'Books 2',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'تصميم 2',
+        'تصميم إبداعي بجودة احترافية',
         '650'
     ),
     (
         1,
-        'App 3',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'تطبيق 3',
+        'حل تقني مبتكر من MOON',
         '370'
     ),
     (
         2,
-        'Product 3',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'حل تقني 3',
+        'حل رقمي مصمم لتطوير أعمالك',
         '470'
     ),
     (
         3,
-        'Branding 3',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'هوية بصرية 3',
+        'تصميم هوية بصرية تعكس قوة علامتك التجارية',
         '570'
     ),
     (
         4,
-        'Books 3',
-        'Lorem ipsum, dolor sit amet consectetur',
+        'تصميم 3',
+        'تصميم إبداعي بجودة احترافية',
         '670'
     );
 
@@ -379,33 +379,33 @@ INSERT INTO
     services (title, description, icon)
 VALUES
     (
-        'Our Services',
-        'We provide tailored solutions for each client. Discover our reliable and effective services.',
+        'خدماتنا',
+        'نقدم حلولًا مخصصة لكل عميل. اكتشف خدماتنا الموثوقة والفعّالة.',
         'bi-activity'
     ),
     (
-        'Customized Solutions',
-        'Our services are designed to meet each client’s needs. We provide the best solution for you.',
+        'حلول مخصصة',
+        'نصمم خدماتنا لتلبية احتياجات كل عميل ونقدم الحل الأنسب لك.',
         'bi-broadcast'
     ),
     (
-        'Innovative Approaches',
-        'We solve your problems with innovative approaches. Every service offers creative solutions.',
+        'أساليب مبتكرة',
+        'نحل تحدياتك بأساليب مبتكرة ونقدم حلولًا إبداعية في كل خدمة.',
         'bi-easel'
     ),
     (
-        'Fast and Efficient Services',
-        'Our services are fast and efficient, with a strong focus on quality. Your needs come first.',
+        'خدمات سريعة وفعّالة',
+        'خدماتنا سريعة وفعّالة مع تركيز كبير على الجودة واحتياجاتك.',
         'bi-bounding-box-circles'
     ),
     (
-        'Expert Advice',
-        'Our experts are ready to provide the best advice. Feel free to reach out with any questions or concerns.',
+        'استشارات متخصصة',
+        'خبراؤنا مستعدون لتقديم أفضل الاستشارات والإجابة عن استفساراتك.',
         'bi-calendar4-week'
     ),
     (
-        'Client Communication',
-        'We maintain open and friendly communication with clients. Your feedback and suggestions are very important to us.',
+        'التواصل مع العملاء',
+        'نحرص على تواصل واضح وودّي مع عملائنا، فآراؤكم واقتراحاتكم مهمة لنا.',
         'bi-chat-square-text'
     );
 
@@ -415,26 +415,26 @@ VALUES
     (
         'bi bi-emoji-smile',
         232,
-        'Happy Clients',
-        'our success'
+        'عملاء سعداء',
+        'سر نجاحنا'
     ),
     (
         'bi bi-journal-richtext',
         521,
-        'Projects',
-        'our creativity'
+        'مشاريع منجزة',
+        'إبداعنا'
     ),
     (
         'bi bi-headset',
         1453,
-        'Support Hours',
-        'we are always there for clients'
+        'ساعات الدعم',
+        'نحن دائمًا إلى جانب عملائنا'
     ),
     (
         'bi bi-people',
         32,
-        'Workers',
-        'our team'
+        'أعضاء الفريق',
+        'فريقنا المتخصص'
     );
 
 INSERT INTO
@@ -443,28 +443,28 @@ VALUES
     (
         'Aliya Karimova',
         'aliya.karimova@example.com',
-        'New Project',
-        'Hello Iqbolshoh, I am very interested in collaborating with you on a new project. Please let me know if we can discuss the details.',
+        'مشروع جديد',
+        'مرحبًا، أرغب في التعاون معكم في مشروع جديد. يرجى إبلاغي بإمكانية مناقشة التفاصيل.',
         'no_checked'
     ),
     (
         'Shodmon Abdurahimov',
         'shodmon.abdurahimov@example.com',
-        'Code Review Request',
-        'Hi Iqbolshoh, could you review my recent code and give feedback? I trust your insights will help me improve!',
+        'طلب مراجعة',
+        'مرحبًا، هل يمكنكم مراجعة عملي الأخير وتقديم ملاحظاتكم؟',
         'no_checked'
     ),
     (
         'Kamola Ergasheva',
         'kamola.ergasheva@example.com',
-        'Platform Assistance',
-        'Dear Iqbolshoh, I need some guidance with navigating your platform. Can you assist me with the features?',
+        'طلب مساعدة',
+        'أحتاج إلى مساعدة في استخدام خدماتكم. هل يمكنكم إرشادي؟',
         'no_checked'
     ),
     (
         'Farhod Yusupov',
         'farhod.yusupov@example.com',
-        'Partnership Inquiry',
-        'Greetings Iqbolshoh, I am reaching out to explore a potential partnership between our teams. I believe we have mutual goals that can benefit us both. Looking forward to your response.',
+        'استفسار عن شراكة',
+        'أتواصل معكم لبحث إمكانية التعاون والشراكة بين فريقينا. أتطلع إلى ردكم.',
         'no_checked'
     );

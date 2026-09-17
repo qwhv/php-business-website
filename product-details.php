@@ -7,19 +7,19 @@ $query = new Database();
 $product = $query->getById('products', $id);
 
 if ($product) {
-  $category = isset($product['category_id']) ? $query->getById('category', $product['category_id'])['category_name'] : 'Unknown';
+  $category = isset($product['category_id']) ? $query->getById('category', $product['category_id'])['category_name'] : 'غير معروف';
   $product_images = $query->executeQuery("SELECT image_url FROM product_images WHERE product_id = $id")->fetch_all(MYSQLI_ASSOC);
   $product_images = !empty($product_images) ? array_column($product_images, 'image_url') : [];
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Product Details</title>
+  <title>تفاصيل العمل | MOON</title>
   <link href="favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -63,11 +63,11 @@ if ($product) {
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="./">Home</a></li>
-            <li class="current">Product Details</li>
+            <li><a href="./">الرئيسية</a></li>
+            <li class="current">تفاصيل العمل</li>
           </ol>
         </nav>
-        <h1>Product Details</h1>
+        <h1>تفاصيل العمل</h1>
       </div>
     </div>
 
@@ -99,23 +99,23 @@ if ($product) {
 
             <div class="col-lg-4">
               <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                <h3>Product Information</h3>
+                <h3>معلومات العمل</h3>
                 <ul>
-                  <li><strong>Category</strong>: <?php echo $category; ?></li>
-                  <li><strong>Product Name</strong>: <?php echo $product['product_name']; ?></li>
-                  <li><strong>Price</strong>: <?php echo number_format($product['price'], 0, '', ' '); ?></li>
+                  <li><strong>التصنيف</strong>: <?php echo $category; ?></li>
+                  <li><strong>اسم العمل</strong>: <?php echo $product['product_name']; ?></li>
+                  <li><strong>السعر</strong>: <?php echo number_format($product['price'], 0, '', ' '); ?></li>
                 </ul>
               </div>
               <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                <h2>Product Description</h2>
+                <h2>وصف العمل</h2>
                 <p><?php echo $product['product_name']; ?> – <?php echo $product['description']; ?></p>
               </div>
             </div>
           <?php else: ?>
             <div class="col-12 product-not-found">
               <div>
-                <h3>Product not found</h3>
-                <p>The product you are looking for does not exist.</p>
+                <h3>العمل غير موجود</h3>
+                <p>العمل الذي تبحث عنه غير موجود.</p>
               </div>
             </div>
           <?php endif; ?>

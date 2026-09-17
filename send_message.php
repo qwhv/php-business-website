@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $query->eQuery($sql, $params);
 
     if ($result) {
-        echo json_encode(['status' => 'success', 'message' => 'Xabaringiz yuborildi. Rahmat!']);
+        echo json_encode(['status' => 'success', 'message' => 'تم إرسال رسالتك بنجاح. شكرًا لك!']);
     } else {
-        echo json_encode(['status' => 'error', 'message' => 'Xabar yuborishda xatolik yuz berdi.']);
+        echo json_encode(['status' => 'error', 'message' => 'حدث خطأ أثناء إرسال الرسالة.']);
     }
 }

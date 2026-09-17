@@ -25,12 +25,12 @@ foreach ($serviceItems as $item) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Home Page</title>
+  <title>MOON | للتقنية والدعاية والإعلان</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link href="favicon.ico" rel="icon">

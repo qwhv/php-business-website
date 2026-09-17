@@ -1,15 +1,21 @@
 <?php
 include 'config.php';
 $query = new Database();
+$moonAddress = 'اليمن، إب، الجبانة السفلى';
+$moonPhoneOne = '+967773143853';
+$moonPhoneTwo = '+967771949917';
+$moonEmail = 'lood71117@gmail.com';
+$moonInstagram = 'qwh.v';
+$moonMapUrl = 'https://maps.app.goo.gl/1xGgJ1w1rdrQSALm9';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact</title>
+  <title>تواصل معنا | MOON</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link href="favicon.ico" rel="icon">
@@ -38,11 +44,11 @@ $query = new Database();
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="./">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="./">الرئيسية</a></li>
+            <li class="current">تواصل معنا</li>
           </ol>
         </nav>
-        <h1>Contact</h1>
+        <h1>تواصل معنا</h1>
       </div>
     </div><!-- End of Page title -->
 
@@ -53,23 +59,42 @@ $query = new Database();
 
         <div class="row gy-4">
 
-          <?php foreach ($contact_boxData as $contact): ?>
-            <div class="col-lg-<?php echo ($contact['id'] == 1) ? '6' : '3'; ?> col-md-6">
+          <div class="col-lg-6 col-md-6">
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
                 data-aos-delay="100">
-                <i class="<?php echo $contact['icon']; ?>"></i>
-                <h3><?php echo $contact['title']; ?></h3>
-                <p><?php echo $contact['value']; ?></p>
+                <i class="bi bi-geo-alt"></i>
+                <h3>العنوان</h3>
+                <p><a href="<?php echo $moonMapUrl; ?>" target="_blank"><?php echo $moonAddress; ?></a></p>
               </div>
-            </div><!-- End of Info Item -->
-          <?php endforeach; ?>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="150">
+              <i class="bi bi-whatsapp"></i>
+              <h3>واتساب</h3>
+              <p><a href="https://wa.me/967773143853" target="_blank"><?php echo $moonPhoneOne; ?></a><br><a href="https://wa.me/967771949917" target="_blank"><?php echo $moonPhoneTwo; ?></a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-envelope"></i>
+              <h3>البريد الإلكتروني</h3>
+              <p><a href="mailto:<?php echo $moonEmail; ?>"><?php echo $moonEmail; ?></a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="250">
+              <i class="bi bi-instagram"></i>
+              <h3>إنستجرام</h3>
+              <p><a href="https://instagram.com/<?php echo $moonInstagram; ?>" target="_blank">@<?php echo $moonInstagram; ?></a></p>
+            </div>
+          </div>
 
         </div>
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.8813426551865!2d67.01298087569626!3d39.58263960598262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d21d3f20f2e7d%3A0x65da282d59cb1b22!2sUy!5e1!3m2!1sen!2s!4v1738728573422!5m2!1sen!2s"
+              src="https://www.google.com/maps?q=%D8%A7%D9%84%D9%8A%D9%85%D9%86%20%D8%A5%D8%A8%20%D8%A7%D9%84%D8%AC%D8%A8%D8%A7%D9%86%D8%A9%20%D8%A7%D9%84%D8%B3%D9%81%D9%84%D9%89&output=embed"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div><!-- End of Google Map -->
@@ -79,24 +104,24 @@ $query = new Database();
               data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required=""
+                  <input type="text" name="name" class="form-control" placeholder="الاسم" required=""
                     maxlength="255">
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required=""
+                  <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required=""
                     maxlength="255">
                 </div>
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required=""
+                  <input type="text" class="form-control" name="subject" placeholder="الموضوع" required=""
                     maxlength="255">
                 </div>
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="رسالتك" required=""></textarea>
                 </div>
                 <div class="col-md-12 text-center">
 
-                  <button type="submit">Send Message</button>
-                  <div class="sent-message" style="display: none;">Your message has been sent successfully!</div>
+                  <button type="submit">إرسال الرسالة</button>
+                  <div class="sent-message" style="display: none;">تم إرسال رسالتك بنجاح!</div>
                   <div class="error-message" style="display: none;"></div>
                 </div>
               </div>
